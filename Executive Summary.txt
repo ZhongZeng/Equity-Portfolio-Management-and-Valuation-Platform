@@ -1,0 +1,39 @@
+Project Executive Summary
+
+1. Members of the team
+Zhong Zeng
+Tianjie Ma
+Niclas Dombrowski
+Yantai Wang
+
+2. Title of the project
+Equity portfolio management and valuation system for individual investors
+
+3. Overview: 
+(1) Motivation
+With our project, we wanted to design a program that can be generally considered an equity portfolio management tool for individual investors. There are many applications already existing in this field, but our goal is it to create a clean and efficient tool that is easy to use. Also, since we believe proper risk management is getting very essential for individual investors and as many existing portfolio management for individual investors do not provide this feature, we added risk metrics to our system. So, the system is designed mainly for two purposes. After feeding your system with real data, one purpose is to provide the ability to buy and sell stocks and then to get an overview of the positions in the account. The other purpose is to analyze the equity portfolio and to provide the user with a performance outline and a risk matrices. Although our program can be easily extended, we designed our program to be long only equity portfolio management tool. As for now, all our transactions will happen virtually, but these transactions could potentially be connected to an actual trade execution platform. 
+
+(2) Potential user group of your application
+As stated in the project title and the motivation part, the program aims to serve individual investors. The most potential users of our application probably will be younger people (for example in the mid-20s or younger, e.g. undergraduate students) who are starting to make their own first equity investments. Another reason why we aim for this user group is that it can be used as a tool for students to analyze their portfolios in different classes or in a student managed investment fund. The other potential user group could be people who want to virtually implement their portfolio strategies and analyze the performance before making the real trading.
+
+(3) What inputs it requires 
+In general, we need to have a universe of financial data as in input to our program to execute the different aspects we outlined in our motivation. These inputs include Asset tickers, Date and Price inputs, Risk-free rate of return, Market index, Initial money position, Shares of each equity asset purchased, etc. Not all inputs are required by the user as many inputs need like the stock data (asset ticker, date and price inputs) need to be included to be able to set up a portfolio through buying and selling of assets. 
+
+(4) What outputs it generates 
+Position output: The Dollar value of the equity position and the money position
+Price information output: Current prices of stocks purchased
+Performance ratio output: Return, Volatility, Sharpe ratio, Tracking error, Beta
+Risk matrix output: Value at risk, Expected shortfall
+Also, our code will be able to provide error messages once for example if the user wants to sell a stock that is not included in the portfolio.
+
+(5) Conclusion 
+Firstly, the application is easy to use. For example, users can just type the equity name (in form of a pointer) and number of shares to buy shares of a company or set up the initial cash position to start their portfolio management.
+Secondly, the application is very efficient for portfolio analysis. It provides the basic positions reporting function and the advanced portfolio analysis. For example, the performance ratio can help analyzing the return of the portfolio and how it outperforms the market index. The risk matrix can reveal how risky the portfolio is and quantify the possible loss on the given investors’ risk-acceptable level. 
+Thirdly, this application makes the portfolio dynamically adjustable. Users can adjust the portfolio portion and compare the return and the risk. Then they can perform better analysis and decision making.
+Fourthly, our program code is easily expandable. So, taking short positions can be added as well as other asset classes and performance ratios/risk metrics. 
+
+4. How to use your application - user's manual
+Input the initial money you want to invest in. Then input the asset ticker that you want purchase and the number of shares you want to buy. At the point in time when the users want to sell a portfolio position, the user can achieve this with the same logic as for buying stocks. Money can also be added or withdrawn. The risk-free rate is provided as well as a universe of stocks and market index data for S&P500. The user can run this application to get the above-mentioned output. One group of outputs are the equity position and the money position. The other group of outputs are the performance ratio and risk metrics. You can look at the position output to control and balance your investments. Besides that, the performance ratio and the risk metrics can help you analyze and adjust your portfolio.
+
+5. How do the team members collaborated
+Niclas Dombrowski focused primarily on the data part. He collected the different assets’ data and also provided the data retrieving code for the objects we created. Tianjie Ma focused primarily on the performance ratios’ code. Zhong Zeng focused primarily on the portfolio position code. Yantai Wang focused primarily on the risk metrics code. Overall, all team members collaborated a great deal, were present in all group meetings, and made a very huge effort to complete this group project successfully. 
